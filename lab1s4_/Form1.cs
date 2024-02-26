@@ -334,13 +334,16 @@ namespace lab1s4_
         private void sortAscending_Click(object sender, EventArgs e)
         {
             CompareTo<double> comperator = CompareToAscending<double>;
-            sortNumbers = BubbleSort<double>;
+            //sortNumbers = BubbleSort<double>;
 
             CompareTo<string> stringComperator = CompareToAscending<string>;
-            sortStrings = BubbleSort<string>;
+            //sortStrings = BubbleSort<string>;
 
-            sortNumbers(SortedNumbers, comperator);
-            sortStrings(SortedStrings, stringComperator);
+            BubbleSort(SortedStrings, stringComperator);
+            BubbleSort(SortedNumbers, comperator);
+
+            //sortNumbers(SortedNumbers, comperator);
+            //sortStrings(SortedStrings, stringComperator);
 
             ShowSortedNumbers();
         }
@@ -348,13 +351,16 @@ namespace lab1s4_
         private void sortDescending_Click(object sender, EventArgs e)
         {
             CompareTo<double> comperator = CompareToDescending<double>;
-            sortNumbers = BubbleSort<double>;
+            //sortNumbers = BubbleSort<double>;
 
             CompareTo<string> stringComperator = CompareToDescending<string>;
-            sortStrings = BubbleSort<string>;
+            //sortStrings = BubbleSort<string>;
 
-            sortNumbers(SortedNumbers, comperator);
-            sortStrings(SortedStrings, stringComperator);
+            BubbleSort(SortedStrings, stringComperator);
+            BubbleSort(SortedNumbers, comperator);
+
+            //sortNumbers(SortedNumbers, comperator);
+            //sortStrings(SortedStrings, stringComperator);
 
             ShowSortedNumbers();
 
